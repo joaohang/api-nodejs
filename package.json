@@ -1,0 +1,37 @@
+{
+  "name": "api-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --setupFiles dotenv/config --env node ",
+    "dev": "nodemon -r dotenv/config ./server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaohang/api-nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaohang/api-nodejs/issues"
+  },
+  "homepage": "https://github.com/joaohang/api-nodejs#readme",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "body-parser": "^1.19.1",
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "jest": "^27.4.7",
+    "pg-promise": "^10.11.1"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "nodemon": "^2.0.15"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
